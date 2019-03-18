@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HSL API</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header>
+    <div id="kello"></div>
+    <div id="tapahtuma">
+        <marquee behavior="scroll" direction="left" id="teksti">Luokka MM95 härkätaistelua.</marquee>
+    </div>
+    <div id="metropolia"></div>
+</header>
+<main>
+    <div id="hsl">
+        <div class="otsikko" id="header">
+            <div style="width: 30%">Aika</div>
+            <div style="width: 37%">Linja</div>
+            <div style="width: 33%">Pysäkki</div>
+        </div>
+        <div id="tulos"></div>
+    </div>
+    <div id="center">
+        <div id="api">
+            <div id="weatherContainer">
+                <div id="weatherDescription">
+                    <h1 id="cityHeader"></h1>
+
+                    <div id="temperature"></div>
+
+                    <div id="weatherMain">
+                        <div id="weatherDescriptionHeader"></div>
+
+                        <div id="weatherImg"></div>
+                    </div>
+
+                    <div id="windSpeed" class="bottomDetails"></div>
+                    <div id="mainCity" class="=bottomDetails"></div>
+
+                </div>
+            </div>
+        </div>
+        <div id="loop">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="img/myyrmaki_1.png">
+                </div>
+                <div class="mySlides fade">
+                    <img src="img/myyrmaki_2.png">
+                </div>
+                <div class="mySlides fade">
+                    <img src="img/myyrmaki_03.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sodexo">
+
+        <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="104535/"></script></div>
+    <div></div>
+</main>
+<script src="app.js"></script>
+<script src="clock.js"></script>
+<script src="slideshow.js"></script>
+<script src="weather.js"></script>
+</body>
+</html>

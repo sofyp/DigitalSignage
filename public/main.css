@@ -1,0 +1,253 @@
+html {
+    background: url("recordspin.gif") no-repeat center center fixed;
+    background-size: cover;
+}
+body {
+    /*background-color: rgb(235,235,235);*/
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+header{
+    height: 10vh;
+    margin-bottom: 1%;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+marquee{
+    width: 100%;
+}
+#metropolia{
+    background-image: url("img/Metropolia_RGB_A.png");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    height: 10vh;
+    width: 10vw;
+
+}
+#tapahtuma{
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: calc(10vh - 2vw);
+    width: 70vw;
+    font-size: 2vw;
+    text-align: center;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    position: relative;
+    overflow: hidden;
+}
+#kello{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 10px;
+    height: calc(10vh - 1vw);
+    width: 10vw;
+    font-size: 3vw;
+    padding: 0.5vw;
+}
+#hsl{
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 32vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1vw;
+}
+#sodexo{
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 32vw;
+    height: 80vh;
+}
+#center{
+    height: 80vh;
+    width: 32vw;
+    justify-content: space-between;
+    align-content: space-between;
+}
+/*****WEATHER***************************/
+#api{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    justify-content: center;
+    align-content: center;
+    border-radius: 10px;
+    width: 100%;
+    height: 49%;
+    margin-bottom: 2%;
+}
+#weatherContainer {
+    padding-top: 25px;
+    padding-left: 50px;
+    border-radius: 8px;
+    position: absolute;
+    visibility: hidden;
+}
+#searchContainer {
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#searchContainer input {
+    width: 200px;
+}
+#searchContainer button {
+    background-color: rgb(1, 159, 198);
+    width: 75px;
+}
+.searchControl {
+    box-shadow: 2px 2px 5px black;
+    border: none;
+    border-bottom: 5px;
+    padding: 5px;
+}
+#weatherMain {
+    display: block;
+    margin-bottom: 20px;
+}
+#weatherMain div {
+    display: inline-block;
+}
+#weatherDescriptionHeader {
+    font-size: 24px;
+    vertical-align: 50%;
+}
+#temperature {
+    font-size:  38px;
+    vertical-align: 25%;
+}
+.bottomDetails {
+    display: block;
+    font-size: 24px;
+}
+
+#loop{
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    width: 100%;
+    height: 49%;
+    overflow: hidden;
+    justify-content: center;
+   }
+img{
+    max-width: 100%;
+    height: auto;
+}
+#tulos {
+    color: black;
+    height: calc(100% - 8vh);
+    display: flex;
+    justify-content: flex-start;
+    background-size: cover;
+    background-repeat: repeat-x;
+    white-space: normal;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1%;
+    margin: 0.5%;
+    overflow: hidden;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.aikataulu{
+    background-color: rgba(0,0,0,0);
+    color: black;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+.vastausdiv{
+    margin: 0;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.otsikko{
+    height: 2vw;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+}
+.late{
+    color: red;
+}
+.early{
+    color: green;
+}
+.time{
+    width: 25%;
+}
+.number{
+    width: 33%;
+}
+.stopName{
+    width: 32%;
+}
+.walking{
+    width: 10%;
+}
+#teksti {
+    -moz-animation: 10s slide-left;
+    -webkit-animation: 10s slide-left;
+    -o-animation: 10s slide-left;
+    animation: 10s slide-left;
+    margin: 0;
+}
+@-webkit-keyframes teksti { from {margin-left: 0;width: 100%;}
+    to {margin-left: -100%;width: 300%;} }
+@-moz-keyframes teksti { from {margin-left: 0;width: 100%;}
+    to {margin-left: -100%;width: 300%;} }
+@-o-keyframes teksti { from {margin-left: 0;width: 100%;}
+    to {margin-left: -100%;width: 300%;} }
+@keyframes teksti { from {margin-left: 0;width: 100%;}
+    to {margin-left: -100%;width: 300%;} }
+
+
+/**Slideshow**/
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 5s;
+    animation-name: fade;
+    animation-duration: 5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+/*@media only screen and (max-width: 700px) {
+
+}*/
